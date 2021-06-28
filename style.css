@@ -1,0 +1,61 @@
+/* .keys{
+    display: grid;
+    grid-template-columns: 0;
+} */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline:0;
+}
+
+.calculator{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* justify-content:center;
+    text-align: center; */
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: auto auto  auto auto;
+    grid-template-rows: auto auto  auto auto;
+
+}
+
+.equal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 60px; 
+}
+
+.keys .num{
+    width:80px;
+    height:80px;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+.keys button:hover{
+    background-color: #e0e0e0;
+    
+}
+.keys button:active{
+    background-color: #bdbdbd;
+}
+
+.equal{
+    background-color: #f57f17;
+}
+
+.display{
+    background-color: #212121;
+color: #fafafa;
+border-radius: 10px 10px 0 0;
+padding: 25px;
+font-size: 3rem;
+
+}
